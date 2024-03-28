@@ -1,6 +1,7 @@
 import { Browser } from "@capacitor/browser";
 import { SplashScreen } from "@capacitor/splash-screen";
 
+
 window.customElements.define(
   "capacitor-welcome",
   class extends HTMLElement {
@@ -8,6 +9,7 @@ window.customElements.define(
       super();
 
       SplashScreen.hide();
+
 
       const root = this.attachShadow({ mode: "open" });
       root.innerHTML = `
